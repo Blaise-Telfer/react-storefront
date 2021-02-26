@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const User = require("../models/userModel");
 const keys = require("./config");
 
+
 module.exports = passport => {
 	const opts = {};
 	opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
@@ -20,4 +21,3 @@ module.exports = passport => {
         .catch(err => console.log(err))
     }))
 }
-
