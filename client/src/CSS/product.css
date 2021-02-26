@@ -1,0 +1,278 @@
+
+/*product details page*/
+.product-container{
+  background: #fff;
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+.product-container h1{
+  font-size: 25px !important;
+}
+.link-box{
+  
+}
+.cart-add{
+  display: flex;
+  justify-content: center
+}
+.cart-add div{
+  margin: 0 15px;
+}
+.main-img{
+  width: 250px;
+  height: 250px;
+  margin: 15px auto;
+}
+.main-img img{
+  height: 100%;
+  width: 100%;
+}
+.description-box{
+  padding: 5px;
+  word-wrap: break-word;
+  max-width: 250px;
+  margin: auto;
+  font-weight: 900;
+}
+.product-container .rating{
+  margin: 15px;
+}
+.reviews-box{
+  margin: 20px;
+}
+.single-review{
+  margin: 10px;
+}
+.reviewForm{
+  padding: 10px;
+  background: #e3e3e3;
+}
+.reviewForm .button{
+  font-size: 15px;
+}
+
+
+/*home page*/
+.filter-page{
+  display: flex;
+  height: 100%;
+}
+.filter-results{
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.products li {
+  min-height: 400px !important;
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  flex: 0 1 34rem;
+  height: 15rem;
+}
+
+.product-card{
+  margin: 0 auto !important;
+  text-align: center;
+}
+.product-card h2{
+  margin: 5px 0;
+  font-size: 24px;
+}
+.product-card a{
+  text-decoration: none;
+}
+.product-img{
+  width: 250px;
+  height: 250px;
+  margin: 15px auto;
+}
+.product-img img{
+  height: 100%;
+  width: 100%;
+}
+.product-card .rating{
+  margin: 10px 0;
+}
+.product-card i{
+  cursor: pointer;
+}
+.cart-price{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0;
+}
+.product-card i{
+  cursor: pointer;
+}
+
+
+/*search page*/
+.search-results{
+  width: 100%;
+}
+.search-header{
+  text-align: center;
+  margin: 10px 0;
+}
+.search-header .button{
+  font-size: 15px;
+}
+.category-box{
+  display: flex;
+  justify-content: center;
+}
+.category-box h2{
+  margin: 10px;
+}
+.search-header input{
+  height: 50px;
+  width: 50%;
+}
+
+
+
+/*pagination*/
+.pagination {
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pagination li {
+  display: inline-block;
+  width: 30px;
+  border: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+ul.pagination li a {
+  text-decoration: none;
+  color: #337ab7;
+  font-size: 20px;
+}
+
+ul.pagination li.active a {
+  color: white;
+}
+ul.pagination li.active {
+  background-color: #337ab7;
+}
+
+ul.pagination li a:hover,
+ul.pagination li a.active {
+  color: blue;
+}
+
+.page-selection {
+  width: 48px;
+  height: 30px;
+  color: #337ab7;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+/*Sidebar*/
+.sidebar {
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 3px 2px 5px #333;
+}
+.sidebar h2{
+  padding: 0 0 0 10px;
+}
+.sidebar select{
+  padding: 5px;
+  width: 50%;
+  margin: 0 10px;
+}
+.sidebar .select{
+  padding: 15px;
+}
+.filters{
+  padding: 15px;
+}
+.filters ul{
+  padding: 0 0 0 25px;
+}
+.filters ul label{
+  padding: 0 0 0 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar a.active {
+  background-color: rgb(0, 159, 218);
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: rgb(0, 159, 218);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .product-container{
+	width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  div.content {margin-left: 0;}
+  .filter-page{
+	flex-direction: column;
+  }
+  .filters{
+	display: flex;
+	justify-content: center;
+  }
+  .filters div{
+	margin: 0 10px;
+  }
+}
+
+

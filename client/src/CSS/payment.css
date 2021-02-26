@@ -1,0 +1,140 @@
+/*order review*/
+.order-review{
+  text-align: center;
+}
+.order-review h1{
+  margin: 10px 0;
+}
+.orderForm{
+  border: #e3e3e3 solid 3px;
+  margin: 40px auto;
+  font-size: 20px;
+}
+.trio{
+  display: flex;
+  word-wrap: break-word;
+}
+.trio div{
+  padding: 5px;
+  margin: auto;
+}
+.orderForm p{
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+
+/*payment page*/
+.payment-container{
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+.payment-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #e3e3e3 solid 3px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+}
+.payment-item{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: #e3e3e3 solid 2px;
+}
+
+.payment-img{
+  width: 200px;
+  height: 120px;
+  margin: auto;
+}
+.payment-img img{
+  height: 100%;
+  width: 100%;
+}
+
+.placeorderForm{
+  padding: 15px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 15px;
+  border: #e3e3e3 solid 3px;
+  border-radius: 10px;
+  background: #fff;
+  word-wrap: break-word;
+}
+.placeorderForm ul{
+  padding: 0;
+}
+.placeorderForm a{
+  font-size: 14px;
+  line-height: 5px !important;
+}
+.paypal{
+  width: 90%;
+  margin: auto;
+}
+.summary{
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+}
+.summary div{
+  padding: 15px;
+}
+.summary p{
+  margin: 0;
+  line-height: 1.5em;
+}
+
+
+
+/*confirmation*/
+.confirmPage{
+  text-align: center;
+  font-size: 18px;
+}
+.confirmForm{
+  border: #e3e3e3 solid 3px;
+  margin: 40px auto;
+  width: 75%;
+  padding: 40px 20px;
+  word-wrap: break-word;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+  .payment-container{
+	flex-direction: column;
+  }
+  .payment-item{
+	justify-content: center;
+  }
+  .orderSummary{
+	width: 90%;
+	padding: 10px 20px;
+  }
+} 
+/*media queries*/
+@media screen and (max-width: 650px) {
+  .orderForm{
+	width: 75%;
+  }
+  .trio{
+	flex-direction: column;
+  }
+  .payment-img{
+    width: 150px;
+    height: 100px;
+  }
+} 
