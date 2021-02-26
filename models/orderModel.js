@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { ObjectId } = mongoose.Schema.Types;
 const Schema = mongoose.Schema;
 
+
 const shippingSchema = {
   address: { type: String, required: true },
   city: { type: String, required: true },
