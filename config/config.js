@@ -1,6 +1,6 @@
 module.exports = {
-    JWT_SECRET : process.env.JWTSECRET,
-    MONGO_URI : process.env.MONGO_URI,
+	JWT_SECRET : process.env.JWTSECRET,
+	MONGO_URI : process.env.MONGO_URI,
 	PAYPAL_CLIENT_ID: process.env.PAYPAL_CLIENT_ID,
 	SENDGRID_URI: process.env.SENDGRID_URI,
 	CLOUD_NAME: process.env.CLOUD_NAME,
