@@ -3,7 +3,7 @@
   height: 100%;
 }
 html {
-  font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */
+  font-size: 10px;
   box-sizing: border-box;
 }
 body {
