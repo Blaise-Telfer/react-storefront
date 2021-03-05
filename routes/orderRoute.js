@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require("../models/productModel");
 const Order = require("../models/orderModel");
 const { isAuth, isAdmin } = require('../middleware/authParameters');
-const keys = require("../config/config");
+const config = require("../config/config");
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(config.SENDGRID_URI);
 
