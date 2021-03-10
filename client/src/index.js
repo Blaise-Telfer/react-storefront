@@ -6,8 +6,6 @@ import "./CSS/App.css";
 import "./CSS/cart.css";
 import "./CSS/product.css";
 import "./CSS/payment.css";
-import "./CSS/navigation.css";
-import "./CSS/index.css";
 
 
 ReactDOM.render(
