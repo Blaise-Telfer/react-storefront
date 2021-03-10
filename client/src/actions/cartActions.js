@@ -50,7 +50,6 @@ export const addToCart = (productId, qty) => async (dispatch, getState) => {
 	}
 };
 
-
 export const cartNumChangeSuccess = (product, qty) => (dispatch) => {
   dispatch({
     type: CART_NUM_CHANGE,
@@ -75,7 +74,6 @@ export const cartNumChange = (productId, qty) => async (dispatch, getState) => {
 	}
 };
 
-//
 export const removeFromCart = (productId) => (dispatch, getState) => {
   dispatch({
 	type: REMOVE_FROM_CART,
@@ -84,8 +82,6 @@ export const removeFromCart = (productId) => (dispatch, getState) => {
   const { cart: {cartItems} } = getState();
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 };
-
-//
 
 export const cleanCart = () => (dispatch) => {
     localStorage.setItem("cartItems", []);
