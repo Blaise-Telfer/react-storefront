@@ -12,6 +12,7 @@ import {
   orderPayReducer, orderDeleteReducer 
 } from "./orderReducer";
 
+
 export {
   authRegisterReducer,
   authLoginReducer,
@@ -31,5 +32,3 @@ export {
   orderPayReducer, 
   orderDeleteReducer
 };
-
- 
