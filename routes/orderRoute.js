@@ -93,7 +93,7 @@ router.put("/:id/pay", isAuth, async (req, res) => {
 			  console.log(err);
 			}
 			if(result){
-			  console.log(result);
+			  res.json(result);
 			}
 		  });
 		});
