@@ -21,7 +21,6 @@ export const Product = (props) => {
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
   const { product, loading, error } = productDetails;
-  console.log(productDetails);
   
   const productCreate = useSelector((state) => state.productCreate);
   const { error: errorLay, loading: loadingLay, success: reviewSuccess } = productCreate;

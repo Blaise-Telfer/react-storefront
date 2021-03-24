@@ -114,9 +114,6 @@ class CreateEditProduct extends Component{
   }
 }
 
-
-
-
 CreateEditProduct.propTypes = {
   ...propTypes
 }

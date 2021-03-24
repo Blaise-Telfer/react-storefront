@@ -15,7 +15,6 @@ function Checkout(props) {
   const { loading: loadingPay, success, error: errorPay } = orderPay;
   const orderDetails = useSelector(state => state.orderDetails);
   const { loading, order, error } = orderDetails;
-  console.log(orderDetails);
   
   useEffect(() => {
     if (success) {

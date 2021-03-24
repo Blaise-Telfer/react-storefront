@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import classnames from "classnames";
 import { connect } from "react-redux";
 import { loginUser } from "../actions/userActions";
 import {
   Button,
   Container,
   Form,
-  Icon,
   Message,
   Segment, Dimmer, Loader
 } from 'semantic-ui-react';
@@ -16,15 +12,12 @@ import {
 
 class Login extends Component{
 	 
-	constructor() {
-		super();
-		this.state = {
-			user: {
-			  email: '',
-			  password: ''
-			}
-		};
-	}
+	state = {
+	  user: {
+		email: "",
+		password: ""
+	  }
+	};
 	
 	componentDidMount() {
 	  if (this.props.authInfo.isAuthenticated) {

@@ -72,7 +72,6 @@ const Filter = () => {
 	};
 	
 	const handlePageChange = (pageNumber) => {
-	  console.log(`active page is ${pageNumber}`);
 	  setActivePage(pageNumber);
 	}
 	const totalItems = products.length;

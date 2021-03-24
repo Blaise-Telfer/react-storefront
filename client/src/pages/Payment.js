@@ -16,7 +16,6 @@ function Payment(props) {
   const orderDetails = useSelector(state => state.orderDetails);
   const { loading, order, error } = orderDetails;
   const orderId = props.match.params.id;
-  console.log(orderDetails);
   
   useEffect(() => {
 	if (success) {

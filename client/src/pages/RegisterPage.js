@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
-import PropTypes from "prop-types";
-import classnames from "classnames";
+import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { registerUser } from "../actions/userActions";
 import {
@@ -16,20 +14,17 @@ import {
 
 class Register extends Component{
 	
-	constructor() {
-		super();
-			this.state = {
-			user: {
-				username: "",
-				firstname: "",
-				lastname: "",
-				email: "",
-				location: "",
-				password: "",
-				confirmPassword: ""
-			},
-		};
-	}
+	state = {
+	  user: {
+		username: "",
+		firstname: "",
+		lastname: "",
+		email: "",
+		location: "",
+		password: "",
+		confirmPassword: ""
+	  },
+	};
 	
 	componentDidMount() {
 	  if (this.props.authInfo.isAuthenticated) {

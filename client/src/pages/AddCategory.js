@@ -15,16 +15,14 @@ import {
 
 
 class AddCategory extends Component{
-  constructor() {
-    super();
-	this.state = {
-	  category: {
-        name: "",
-        description: ""
-	  }
-    };
+  
+  state = {
+	category: {
+	  name: "",
+	  description: ""
+	}
   }
-	
+
   onChange = (e) => this.setState({
 	category: {...this.state.category, [e.target.name]: e.target.value }
   });
