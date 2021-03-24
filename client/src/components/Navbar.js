@@ -8,11 +8,8 @@ import Logo from "./logo.png";
 
 class Navbar extends Component{
 
-  constructor(props){
-	super(props)
-	this.state= {
-	  totalQuantity: null
-	}
+  state= {
+	totalQuantity: null
   }
   
   componentDidMount() {
